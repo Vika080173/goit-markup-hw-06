@@ -73,6 +73,7 @@ button {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 .header-address-list .header-address-link:hover,
 .header-address-list .header-address-link:focus {
