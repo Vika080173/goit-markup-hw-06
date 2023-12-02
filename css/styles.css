@@ -46,17 +46,24 @@ button {
 .header-nav:focus {
   color: #404bbf;
 }
-.logo {
-  font-family: 'Raleway', sans-serif;
+.header-nav,
+.footer-logo {
+  color: #4d5ae5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-size: 18px;
   font-weight: 700;
+  font-family: 'Raleway', sans-serif;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  width: 71px;
+  height: 21px;
 }
 
 .accent {
-  color: #4d5ae5;
+  color: #f4f4fd;
 }
 .header-list {
   font-weight: 500;
@@ -73,6 +80,7 @@ button {
   color: #434455;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-style: normal;
 }
 .header-address:hover,
 .header-address:focus {
@@ -120,7 +128,7 @@ button {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: #02084e;
+  color: #404bbf;
 }
 
 /*  directions */
@@ -152,7 +160,7 @@ button {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
 }
 .direct-desc,
 .team-desc,
@@ -160,7 +168,7 @@ button {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
 }
 
 /* Team */
@@ -176,7 +184,7 @@ button {
 }
 
 .team-list {
- /* display: flex;
+  /* display: flex;
   padding-left: 156px;*/
 }
 .team-list li {
@@ -219,13 +227,7 @@ button {
   /*display: flex;
   padding-left: 156px;*/
 }
-.portfolio-list li {
-  color: #2e2f42;
-  display: inline-block;
-  margin-right: 20px;
-  top: 50%;
-  vertical-align: middle;
-}
+
 .portfolio-item {
   align-items: flex-start;
   box-sizing: border-box;
@@ -252,22 +254,10 @@ button {
   width: 1440px;
   height: 312px;
 }
-.footer-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: 'Raleway', sans-serif;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  width: 71px;
-  height: 21px;
-}
+
 .footer-desc {
   line-height: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.02em;
   width: 264px;
   height: 72px;
 }
