@@ -1,36 +1,67 @@
-/* Body styles */
-body {
-  color: #434455;
-  background-color: #fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 400px;
-  font-style: normal;
+/* Задаємо box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  /* Властивості по дефолту */
+ /* Властивості по дефолту */
   /* font-size: 16px;
 font-weight: 400;
 font-style: normal;
 color: black;
 background-color: white;
   */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; /* Прибираємо зовнішні відступи */
+}
+
+ul,
+ol {
+  list-style-type: none; /* Прибираємо маркери */
+  padding: 0;
+  margin: 0;
 }
 
 a {
   color: currentColor; /*Наслідування кольору */
   text-decoration: none; /*Прибираємо підкреслення */
 }
-
-ul,
-ol {
-  list-style-type: none; /* Прибираємо маркери */
-}
-
 button {
   font-family: inherit; /* Наслідування властивості */
   color: currentColor;
+  background-color: transparent;
+  border: none;
   cursor: pointer;
 }
+
+/* Властивості контейнеру */
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Body styles */
+body {
+  color: #434455;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  font-style: normal;
+
+ 
 
 /* header */
 .header {
