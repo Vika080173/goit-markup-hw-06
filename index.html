@@ -476,31 +476,31 @@
               </a>
             </li>
           </ul>
-
-          <div class="fotter-subscribe">
-            <p class="fotter-social-desc">Subscribe</p>
-            <form class="subscribe-form" name="subscribe">
-              <label class="subscribe-form-field">
-                <input
-                  class="subscribe-form-input"
-                  type="email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button class="subscribe-form-btn" type="submit">
-                Sabscribe
-                <svg class="subscribe-form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-Frame"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+        </div>
+        <div class="footer-subscribe">
+          <p class="footer_subscribe-text">Subscribe</p>
+          <form class="subscribe-form" name="subscribe">
+            <label class="subscribe-form-field">
+              <input
+                class="subscribe-form-input"
+                type="email"
+                name="email-field"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-form-btn" type="submit">
+              Sabscribe
+              <svg class="subscribe-form-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Modal close button">
           <svg class="modal-btn-icon" width="8" height="8">
@@ -510,6 +510,7 @@
         <p class="modal-caption">
           Leave your contacts and we will call you back
         </p>
+
         <form class="modal-form form" name="modal">
           <label class="form-label" for="user-name">Name</label>
           <div class="form-field">
@@ -523,6 +524,7 @@
               <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
           </div>
+
           <label class="form-label" for="user-phone">Phone</label>
           <div class="form-field">
             <input
@@ -535,6 +537,7 @@
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
+
           <label class="form-label" for="user-email">Email</label>
           <div class="form-field">
             <input
@@ -564,7 +567,7 @@
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
-              value="false"
+              value="true"
             />
             <span class="label-checkbox-span">
               <svg class="svg-checkbox" width="10" height="8">
@@ -575,7 +578,7 @@
             <a href="" class="label-checkbox-a">Privacy Policy</a>
           </label>
 
-          <button class="form-btn" type="submit" disabled>Send</button>
+          <button class="form-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
