@@ -679,7 +679,7 @@ body {
   transition: border-color 500ms ease-out;
 }
 .form-input:focus {
-  border-color: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
 }
 .form-icon {
   position: absolute;
