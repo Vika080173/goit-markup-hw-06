@@ -72,7 +72,7 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-    font-style: normal;
+  font-style: normal;
   margin: 0;
 }
 
@@ -178,7 +178,7 @@ body {
 
 /* hero */
 .hero {
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   background-color: #2e2f42;
   padding: 188px 0;
   background-image: linear-gradient(
@@ -209,6 +209,7 @@ body {
   display: block;
   padding: 16px 32px;
   min-width: 169px;
+  margin: 0 auto;
   align-items: flex-start;
   font-weight: 500;
   color: #fff;
@@ -216,7 +217,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   background-color: #4d5ae5;
-  margin: auto;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -388,7 +391,7 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Foote */
+/* Footer */
 .footer {
   display: block;
   flex-wrap: wrap;
@@ -532,7 +535,7 @@ body {
 }
 .subscribe-form-input {
   min-width: 264px;
-  min-height: 40px;
+  height: 40px;
   padding: 8px 16px;
 
   border-radius: 4px;
@@ -622,6 +625,8 @@ body {
   padding-top: 72px;
   border-radius: 4px;
   background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -643,14 +648,14 @@ body {
   background-color: #e7e9fc;
 
   cursor: pointer;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
-  fill: var(--color-white);
+  /* fill: var(--color-white);*/
 }
 
 .modal-btn-icon {
@@ -659,7 +664,7 @@ body {
 }
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .modal-caption {
@@ -674,9 +679,11 @@ body {
   letter-spacing: 0.02em;
 }
 .modal-form {
-  margin-bottom: 8px;
 }
 .form {
+}
+.modal-form-div {
+  margin-bottom: 8px;
 }
 .form-label {
   display: block;
@@ -735,7 +742,7 @@ body {
   padding: 8px 16px;
 
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   flex-shrink: 0;
 
@@ -756,9 +763,11 @@ body {
 
 /* блок з чекбоксом */
 
+.form-checkbox {
+  margin-bottom: 24px;
+}
 .modal-form-checkbox {
   display: block;
-  margin-bottom: 24px;
 
   color: #8e8f99;
   font-size: 12px;
@@ -776,14 +785,21 @@ body {
   width: 16px;
   height: 16px;
 
-  stroke-width: 1px;
-  stroke: rgba(46, 47, 66, 0.4);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  fill: transparent;
+  /*stroke-width: 1px;
+  stroke: rgba(46, 47, 66, 0.4);*/
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 /* звязка сусідніх елементів */
 .form-checkbox-input:checked + .label-checkbox-span {
   background-color: #4d5ae5;
+  border: none;
+  fill: #f4f4fd;
 }
 
 .svg-checkbox {
@@ -803,18 +819,18 @@ body {
 .form-btn {
   display: block;
   min-width: 169px;
-  min-height: 56px;
+  height: 56px;
   padding: 16px 32px;
   margin: 0 auto;
 
-  color: #fff;
+  color: #ffffff;
   text-align: center;
-
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-
+  border: none;
   border-radius: 4px;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
