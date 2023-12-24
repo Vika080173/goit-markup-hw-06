@@ -690,8 +690,7 @@ body {
 .modal-form-div {
   margin-bottom: 8px;
 }
-.form-label,
-.form-label-comment {
+.form-label {
   display: block;
   margin-bottom: 4px;
   color: #8e8f99;
