@@ -690,7 +690,8 @@ body {
 .modal-form-div {
   margin-bottom: 8px;
 }
-.form-label {
+.form-label,
+.form-label-comment {
   display: block;
   margin-bottom: 4px;
   color: #8e8f99;
@@ -733,14 +734,7 @@ body {
 .modal-form-comment {
   margin-bottom: 16px;
 }
-.form-label-comment {
-  display: block;
-  margin-bottom: 4px;
-  color: #8e8f99;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-}
+
 .form-comment-textarea {
   width: 100%;
   min-height: 120px;
